@@ -59,6 +59,10 @@ public class Main {
         queue.enqueue(70);
         queue.display();
 
+        while (!queue.isEmpty()) {
+            System.out.println("Dequeued: " + queue.dequeue());
+        }
+
 
     }
 
