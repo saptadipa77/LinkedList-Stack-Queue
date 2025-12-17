@@ -25,4 +25,24 @@ public class LinkedList<T> {
             tail=newNode;
         }
     }
+
+    public void insertAfter(T key, T data)
+    {
+        Node<T> newNode=new Node<>(data);
+        Node<T> curr=head;
+        while(curr!=null){
+            if(curr.data.equals(key)){
+                newNode.next=curr.next;
+                curr.next=newNode;
+                if(curr==tail)
+                {
+                    tail=newNode;
+                }
+                return;
+            }
+            else{
+                curr=curr.next;
+            }
+        }
+    }
 }

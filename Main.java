@@ -9,5 +9,7 @@ public class Main {
         list.appendNode(56);
         list.appendNode(30);
         list.appendNode(70);
+
+        list.insertAfter(56,30);
     }
 }
