@@ -46,6 +46,19 @@ public class Main {
         stack.push(56);
         stack.display();   // 56 -> 30 -> 70
 
+        while (!stack.isEmpty()) {
+            System.out.println("Peek: " + stack.peek());
+            System.out.println("Popped: " + stack.pop());
+        }
+
+
+    //-----------Queue-----------------
+        Queue<Integer> queue = new Queue<>();
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
+        queue.display();
+
 
     }
 
