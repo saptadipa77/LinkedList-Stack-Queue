@@ -17,6 +17,8 @@ public class Main {
 
         System.out.println(list.searchValue(30));
 
+        list.insertAfter(30, 40);
+
     }
 
 
