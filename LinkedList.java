@@ -78,4 +78,35 @@ public class LinkedList<T> {
         }
         return false;
     }
+
+    public void delete(T key) {
+        if (head == null)
+            return;
+
+        if (head.data.equals(key)) {
+            head = head.next;
+            return;
+        }
+
+        Node<T> current = head;
+        while (current.next != null) {
+            if (current.next.data.equals(key)) {
+                current.next = current.next.next;
+                if (current.next == null)
+                    tail = current;
+                return;
+            }
+            current = current.next;
+        }
+    }
+
+    public int size() {
+        int count = 0;
+        Node<T> current = head;
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
 }

@@ -19,6 +19,10 @@ public class Main {
 
         list.insertAfter(30, 40);
 
+        list.delete(40);
+        System.out.println(list.size());
+
+
     }
 
 
