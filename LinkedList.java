@@ -67,4 +67,15 @@ public class LinkedList<T> {
         current.next = null;
         tail = current;
     }
+
+    public boolean searchValue(T key)
+    {
+        Node<T> current = head;
+        while (current != null) {
+            if (current.data.equals(key))
+                return true;
+            current = current.next;
+        }
+        return false;
+    }
 }

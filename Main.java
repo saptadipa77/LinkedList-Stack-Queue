@@ -14,6 +14,9 @@ public class Main {
 
         list.pop();
         list.popLast();
+
+        System.out.println(list.searchValue(30));
+
     }
 
 
