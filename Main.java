@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
+
+     //------------Linked List--------------
     LinkedList<Integer> list=new LinkedList<>();
 
         list.addNode(70);
@@ -33,7 +35,16 @@ public class Main {
         sorted.add(30);
         sorted.add(40);
         sorted.add(70);
-        sorted.display(); // 30->40->56->70
+        sorted.display();
+
+
+        //--------STACK----------
+
+        Stack<Integer> stack = new Stack<>();
+        stack.push(70);
+        stack.push(30);
+        stack.push(56);
+        stack.display();   // 56 -> 30 -> 70
 
 
     }

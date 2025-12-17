@@ -110,6 +110,10 @@ public class LinkedList<T> {
         return count;
     }
 
+    public boolean isEmpty() {
+        return head == null;
+    }
+
     public void display() {
         Node<T> curr = head;
         while (curr != null) {
