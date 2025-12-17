@@ -11,5 +11,9 @@ public class Main {
         list.appendNode(70);
 
         list.insertAfter(56,30);
+
+        list.pop();
     }
+
+
 }

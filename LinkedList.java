@@ -45,4 +45,12 @@ public class LinkedList<T> {
             }
         }
     }
+
+    public void pop()
+    {
+        if(head!=null)
+        {
+           head=head.next;
+        }
+    }
 }
