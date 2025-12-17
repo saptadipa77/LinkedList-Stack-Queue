@@ -13,6 +13,7 @@ public class Main {
         list.insertAfter(56,30);
 
         list.pop();
+        list.popLast();
     }
 
 
