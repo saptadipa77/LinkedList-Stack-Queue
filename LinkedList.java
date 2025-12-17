@@ -46,13 +46,19 @@ public class LinkedList<T> {
         }
     }
 
-    public void pop()
-    {
-        if(head!=null)
-        {
-           head=head.next;
-        }
+    public T pop() {
+        if (head == null)
+            return null;
+
+        T data = head.data;   // store removed data
+        head = head.next;
+
+        if (head == null)     // list became empty
+            tail = null;
+
+        return data;
     }
+
 
     public void popLast() {
         if (head == null || head.next == null) {
