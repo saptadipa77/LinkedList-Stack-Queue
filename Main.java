@@ -5,5 +5,9 @@ public class Main {
         list.addNode(70);
         list.addNode(30);
         list.addNode(56);
+
+        list.appendNode(56);
+        list.appendNode(30);
+        list.appendNode(70);
     }
 }

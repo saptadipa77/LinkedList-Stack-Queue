@@ -13,4 +13,16 @@ public class LinkedList<T> {
             head=newNode;
         }
     }
+
+    public void appendNode(T data)
+    {
+        Node<T> newNode=new Node<>(data);
+        if(head==null){
+            head=tail=newNode;
+        }
+        else{
+            tail.next=newNode;
+            tail=newNode;
+        }
+    }
 }
